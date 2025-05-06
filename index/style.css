@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  color: #ffffff;
+  padding: 2rem;
+  background: url('../assets/background.png') center;
+  background-size: cover;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo Link */
+.logo-link {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.logo {
+  height: 100px;
+  width: 100px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  clip-path: polygon(50% 5%, 0% 100%, 100% 100%);
+  object-fit: fill;
+}
+
+.logo-link:hover {
+  transform: scale(1.1);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+nav a:hover {
+  color: #bdb0b0;
+}
+
+main {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.2rem;
+  padding-top: 2%;
+  padding-left: 25%;
+  padding-right: 25%;
+  padding-bottom: 5%;
+}
+
+@keyframes fadeInSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.header-animate {
+  opacity: 0;
+  animation: fadeInSlideUp 1s ease-out forwards;
+  animation-delay: 0.2s;
+}
+
+.intro-text {
+  opacity: 0;
+  animation: fadeInSlideUp 1s ease-out forwards;
+  animation-delay: 0.6s;
+}
+
+/* Navigation Buttons Section */
+.nav-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 2rem 0;
+  opacity: 0;
+  animation: fadeInButtons 1s ease-out forwards;
+  animation-delay: 0.6s;
+}
+
+.nav-buttons a {
+  display: inline-block;
+  border-radius: 15px;
+  padding: 0.2%;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3), 0 0 20px rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nav-buttons a:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
+}
+
+.nav-buttons .nav-icon {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.2));
+  border-radius: 15px;
+}
+
+@keyframes fadeInButtons {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+.gallery {
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 10%;
+}
+
+.gallery-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.gallery-track {
+  display: flex;
+  width: max-content;
+  animation: scroll-left 30s linear infinite;
+}
+
+.gallery-track img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-right: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-track img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Animation to scroll left */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+footer {
+  background-color: #090909;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  left: 0;
+}
+
+footer ul {
+  list-style: none;
+}

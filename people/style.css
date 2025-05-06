@@ -1,0 +1,108 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  color: #ffffff;
+  padding: 2rem;
+  background: url('../assets/background0.png') center;
+  background-size: cover;
+}
+
+h1 {
+  font-size: 3.5rem;
+  text-align: center;
+  padding-bottom: 2%;
+}
+
+.gallery {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-left: 16%;
+  padding-right: 16%;
+}
+
+.gallery a {
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery span {
+  display: block;
+}
+
+.gallery a:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.gallery img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+.actor-name {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.role {
+  font-size: 1rem;
+  font-style: italic;
+  color: #b3dcf7;
+  text-align: center;
+}
+
+.back-home {
+  display: inline-block;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.back-home:hover {
+  color: #8c9194;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.logo {
+  height: 60px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+nav a:hover {
+  color: #908c8c;
+}
+
+.special {
+  color:blueviolet;
+}

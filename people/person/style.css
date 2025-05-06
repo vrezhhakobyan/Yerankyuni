@@ -1,0 +1,61 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 2rem;
+  max-width: 600px;
+  margin: auto;
+  position: relative;
+  z-index: 1;
+  color: #ffffff;
+}
+
+/* Default background for all pages */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('../../assets/background.png') no-repeat center center;
+  background-size: cover;
+  filter: blur(8px);
+  z-index: -1;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+h1 {
+  margin-bottom: 1rem;
+}
+
+.profile-pic {
+  width: 200px;
+  border-radius: 5px;
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+section h2 {
+  margin-bottom: 0.5rem;
+}
+
+/* Special background for actor7 */
+.actor7-background::before {
+  content: none;
+  /* Disable the default background */
+}
+
+.actor7-background {
+  background: url('../../assets/background_Clean.png') no-repeat center center;
+  background-size: cover;
+
+}
