@@ -1,4 +1,54 @@
-body { font-family: Arial, sans-serif; background: #111; color: #eee; padding: 2rem; }
-nav a { color: #ccc; text-decoration: none; font-size: 0.9rem; }
-h1 { margin-bottom: 1rem; }
-.movie-player { width: 100%; max-width: 800px; display: block; margin: auto; border-radius: 8px; }
+/* General body styling */
+body {
+  font-family: Arial, sans-serif;
+  background: url('../assets/background0.png') no-repeat center center fixed;
+  /* Replace with your background image path */
+  background-size: cover;
+  color: #eee;
+  padding: 2rem;
+  text-align: center;
+  /* Center all text by default */
+  backdrop-filter: blur(5px);
+  /* Adds a blur effect to the background */
+}
+
+nav {
+  text-align: left;
+  /* Align navigation to the left */
+  margin-bottom: 2rem;
+}
+
+/* Navigation styling */
+nav a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 0.9rem;
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+
+/* Header styling */
+h1,
+h2 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Video player styling */
+.movie-player {
+  width: 100%;
+  max-width: 800px;
+  display: block;
+  margin: 2rem auto;
+  /* Adds spacing between videos */
+  margin-bottom: 10%;
+  /* Increases the distance between videos */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  /* Adds a subtle shadow */
+}
+
+/* Add spacing between sections */
+main>* {
+  margin-bottom: 2rem;
+}

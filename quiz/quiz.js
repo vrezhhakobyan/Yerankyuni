@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Function to shuffle and pick random questions
   function getRandomQuestions() {
     const shuffled = questions.sort(() => 0.5 - Math.random());
-    return shuffled.slice(0, 10);
+    return shuffled.slice(0, 8);
   }
 
   // Function to render the quiz
